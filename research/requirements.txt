@@ -2,6 +2,7 @@ music21==5.7.0
 pandas==1.1.4
 jupyterlab==2.2.9
 jupyter==1.0.0
-tensorflow==2.3.1
+tensorflow==2.2.0
 scikit-learn==0.23.2
 matplotlib==3.3.3
+keras-self-attention==0.47.0
