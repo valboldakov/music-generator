@@ -1,0 +1,1 @@
+python generate.py  --path-to-model  ${PATH_TO_MODEL}  --path-to-samples  ${PATH_TO_SAMPLES}  --path-to-tokenizer  ${PATH_TO_TOKENIZER}  --random-state  ${RANDOM_STATE}  --music-elements-amount  ${MUSIC_ELEMENTS_AMOUNT}  --output-folder  ${OUTPUT_FOLDER}  --records-amount  ${RECORDS_AMOUNT}

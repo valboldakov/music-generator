@@ -1,0 +1,16 @@
+version: "2.4"
+services:
+  msuic-generator:
+    build: .
+    environment:
+      - PATH_TO_MODEL=/models/emb-generator-140-1.9999338388442993
+      - PATH_TO_SAMPLES=/data/beethoven_samples.csv
+      - PATH_TO_TOKENIZER=/models/emb-tokenizer.pckl
+      - RANDOM_STATE=151
+      - MUSIC_ELEMENTS_AMOUNT=100
+      - OUTPUT_FOLDER=/output
+      - RECORDS_AMOUNT=5
+    volumes:
+      - ./research/models:/models
+      - ./research/data:/data
+      - ./output:/output
