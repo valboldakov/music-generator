@@ -9,11 +9,7 @@
 
 ## Generated Samples
 
-1. [1](./samples/0-converted.mp3).
-1. [2](./samples/1-converted.mp3).
-1. [3](./samples/2-converted.mp3).
-1. [4](./samples/3-converted.mp3).
-1. [5](./samples/4-converted.mp3).
+Generated samples can be found in the [ `./samples` folder](./samples).
 
 ## Data
 
@@ -30,7 +26,7 @@ All of it can be downloaded from [Google Drive](https://drive.google.com/file/d/
 
 ### Data Processing
 
-Every midi file was splitted to midi file element subsequences of size `101` . Every chord and note was normalised and converted to the string, the duration of the each element was converted to the string too, and then stored to the `pandas.DataFrame` :
+Every midi file was split into midi file element subsequences of size `101` . Every chord and note was normalized and converted to the string, the duration of each element was converted to the string too, and then stored to the `pandas.DataFrame` :
 
 ![Samples CSV](./images/samples_csv.jpg)
 
@@ -83,5 +79,6 @@ Samples are generated with `EmbChordGeneratorMusicModel` model.
 
 To generate samples:
 
-1. [Download and untar model](https://drive.google.com/file/d/1VLejqR8YLGdDJCoA_BK62WgejBVdX1uT/view?usp=sharing).
-2. Run `docker-compose up --build` from the root of the repository. You can change values in `./docker-compose.yml` to configure generator.
+1. [Download and untar model](https://drive.google.com/file/d/1VLejqR8YLGdDJCoA_BK62WgejBVdX1uT/view?usp=sharing) to the `./research/modles` folder.
+2. [Download seed dataset](https://drive.google.com/file/d/1Twbi_YdlT0CwjsSfjb3lu08esZbV1E2x/view?usp=sharing) and add it to the `./research/data` folder.
+3. Run `docker-compose up --build` from the root of the repository. You can change values in `./docker-compose.yml` to configure the generator.
